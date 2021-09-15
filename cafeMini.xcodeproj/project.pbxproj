@@ -63,12 +63,12 @@
 				B95CE1A226EF862E007F60C9 /* AppDelegate.swift */,
 				B95CE1A426EF862E007F60C9 /* SceneDelegate.swift */,
 				B95CE1A626EF862E007F60C9 /* ViewController.swift */,
+				B933FCF426F0D68200AEAF6A /* SecondaryView.swift */,
 				B95CE1A826EF862E007F60C9 /* Main.storyboard */,
 				B95CE1AE26EF8630007F60C9 /* Assets.xcassets */,
 				B95CE1B026EF8630007F60C9 /* LaunchScreen.storyboard */,
 				B95CE1B326EF8630007F60C9 /* Info.plist */,
 				B95CE1AB26EF862E007F60C9 /* cafeMini.xcdatamodeld */,
-				B933FCF426F0D68200AEAF6A /* SecondaryView.swift */,
 			);
 			path = cafeMini;
 			sourceTree = "<group>";
