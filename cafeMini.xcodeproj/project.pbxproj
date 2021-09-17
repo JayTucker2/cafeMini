@@ -15,6 +15,8 @@
 		B95CE1AD26EF862E007F60C9 /* cafeMini.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B95CE1AB26EF862E007F60C9 /* cafeMini.xcdatamodeld */; };
 		B95CE1AF26EF8630007F60C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95CE1AE26EF8630007F60C9 /* Assets.xcassets */; };
 		B95CE1B226EF8630007F60C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95CE1B026EF8630007F60C9 /* LaunchScreen.storyboard */; };
+		B9A88E3B26F4C2FD00C28905 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A88E3A26F4C2FD00C28905 /* MenuController.swift */; };
+		B9A88E3E26F4C49900C28905 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A88E3D26F4C49900C28905 /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B95CE1AE26EF8630007F60C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B95CE1B126EF8630007F60C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B95CE1B326EF8630007F60C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9A88E3A26F4C2FD00C28905 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		B9A88E3D26F4C49900C28905 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,13 @@
 		B95CE1A126EF862E007F60C9 /* cafeMini */ = {
 			isa = PBXGroup;
 			children = (
+				B9A88E3D26F4C49900C28905 /* CartView.swift */,
 				B95CE1A226EF862E007F60C9 /* AppDelegate.swift */,
 				B95CE1A426EF862E007F60C9 /* SceneDelegate.swift */,
 				B95CE1A626EF862E007F60C9 /* ViewController.swift */,
 				B933FCF426F0D68200AEAF6A /* SecondaryView.swift */,
 				B95CE1A826EF862E007F60C9 /* Main.storyboard */,
+				B9A88E3A26F4C2FD00C28905 /* MenuController.swift */,
 				B95CE1AE26EF8630007F60C9 /* Assets.xcassets */,
 				B95CE1B026EF8630007F60C9 /* LaunchScreen.storyboard */,
 				B95CE1B326EF8630007F60C9 /* Info.plist */,
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B95CE1A726EF862E007F60C9 /* ViewController.swift in Sources */,
+				B9A88E3E26F4C49900C28905 /* CartView.swift in Sources */,
 				B95CE1AD26EF862E007F60C9 /* cafeMini.xcdatamodeld in Sources */,
 				B933FCF526F0D68200AEAF6A /* SecondaryView.swift in Sources */,
 				B95CE1A326EF862E007F60C9 /* AppDelegate.swift in Sources */,
+				B9A88E3B26F4C2FD00C28905 /* MenuController.swift in Sources */,
 				B95CE1A526EF862E007F60C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

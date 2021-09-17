@@ -8,24 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate{
-    @IBOutlet weak var menuLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
-    var cart : [String: Double] = [:]
+    var menu : [String : Double] = [:]
+    var cart = ""
+    var pass = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        cart = ["Apples":2.50]
-        cart["Pumpkin"] = 4.25
-        cart["Oranges"] = 3.75
-        cart["Mango"] = 4.50
-        cart["Cherries"] = 1.50
-        menuLabel.text = cart
+        menu = ["Apples":2.50]
+        menu["Pumpkin"] = 4.25
+        menu["Oranges"] = 3.75
+        menu["Mango"] = 4.50
+        menu["Cherries"] = 1.50
+        
     }
     
     @IBAction func addButton(_ sender: Any) {
         let result = textField.text!
-        if let add = cart[result]{
-    
+        if let add = menu[result]{
+    cart += "\(result), \(add) \n"
         }
         else{
             let alertController = UIAlertController(title: "Stop!", message:
@@ -35,12 +36,28 @@ class ViewController: UIViewController, UITextFieldDelegate{
             self.present(alertController, animated: true, completion: nil)
         }
     }
-   /* @IBAction func showAlert(_ sender: Any) {
-     let alertController = UIAlertController(title: "Sorry!", message:
-         "This item is not available at the moment", preferredStyle: .alert)
-     alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+    @IBAction func menuButton(_ sender: Any) {
+        performSegue(withIdentifier: "MenuView", sender: self)
+    }
+     @IBAction func showAlert(_ sender: Any) {
+        let alert = UIAlertController(title: "Admin", message: "Please Enter the password", preferredStyle: .alert)
 
-     self.present(alertController, animated: true, completion: nil)
-} */
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.text = "Password"
+        }
+
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            
+            if let passcheck = pass.self{
+                
+            }
+        }))
+
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
+}
 
 }
