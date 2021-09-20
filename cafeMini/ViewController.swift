@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var textField: UITextField!
+   // @IBOutlet weak var adminField: UITextField!
+    @IBOutlet weak var cartLab: UILabel!
+    @IBOutlet weak var menulab: UILabel!
     var menu : [String : Double] = [:]
     var cart = ""
     var pass = ""
@@ -20,7 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         menu["Oranges"] = 3.75
         menu["Mango"] = 4.50
         menu["Cherries"] = 1.50
-        
+        menulab.text = "Apples, 2.50\n Pumpkin, 4.25\n Oranges 3.75\n Mango, 4.50\n Cherries, 1.50"
     }
     
     @IBAction func addButton(_ sender: Any) {
@@ -35,29 +38,16 @@ class ViewController: UIViewController, UITextFieldDelegate{
 
             self.present(alertController, animated: true, completion: nil)
         }
+        cartLab.text = cart
     }
-    @IBAction func menuButton(_ sender: Any) {
-        performSegue(withIdentifier: "MenuView", sender: self)
+    
+  //  @IBAction func admin(_ sender: Any) {
     }
-     @IBAction func showAlert(_ sender: Any) {
-        let alert = UIAlertController(title: "Admin", message: "Please Enter the password", preferredStyle: .alert)
+   // if pass == adminField.text{
+  //  }
+  //  }
+        
+        
 
-        //2. Add the text field. You can configure it however you need.
-        alert.addTextField { (textField) in
-            textField.text = "Password"
-        }
 
-        // 3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
-            
-            if let passcheck = pass.self{
-                
-            }
-        }))
 
-        // 4. Present the alert.
-        self.present(alert, animated: true, completion: nil)
-}
-
-}
