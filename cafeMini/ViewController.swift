@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         menu["Oranges"] = 3.75
         menu["Mango"] = 4.50
         menu["Cherries"] = 1.50
-        menulab.text = "Apples, 2.50\n Pumpkin, 4.25\n Oranges 3.75\n Mango, 4.50\n Cherries, 1.50"
+        menulab.text = "Apples, 2.50\n Pumpkin, 4.25\n Oranges, 3.75\n Mango, 4.50\n Cherries, 1.50"
     }
     
     @IBAction func addButton(_ sender: Any) {
